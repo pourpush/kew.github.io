@@ -1,140 +1,238 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>Кью – обмен файлами для студентов</title>
-    <meta name="description" content="Мобильное приложение для студентов: загружай и делись учебными материалами, курсовыми, фотографиями. Удобно, быстро и безопасно.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kew.su/">
-    <meta property="og:title" content="Кью">
-    <meta property="og:description" content="Обменивайся файлами с однокурсниками в удобном приложении">
-    <meta property="og:image" content="https://kew.su/images/app-icon.png">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://kew.su/">
-    <meta property="twitter:title" content="Кью">
-    <meta property="twitter:description" content="Обменивайся файлами с однокурсниками">
-    <meta property="twitter:image" content="https://kew.su/images/app-icon.png">
-    <link rel="icon" type="image/png" href="images/app-icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="refresh" content="0; url=/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Кью – обмен файлами для студентов</title>
+  <meta name="description" content="Мобильное приложение для студентов: загружай и делись учебными материалами, курсовыми, фотографиями. Удобно, быстро и безопасно.">
+  <meta property="og:title" content="Кью">
+  <meta property="og:description" content="Обменивайся файлами с однокурсниками в удобном приложении">
+  <meta property="og:image" content="https://kew.su/images/app-icon.png">
+  <meta property="og:url" content="https://kew.su">
+  <link rel="icon" type="image/png" href="images/app-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <img src="images/app-icon.png" alt="Кью логотип" class="logo">
-                <h1>Кью</h1>
-                <p class="tagline">Обменивайся учебными материалами с однокурсниками легко и быстро</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-ios" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-apple"></i> Скачать для iOS
-                    </a>
-                    <a href="#" class="btn btn-android" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-google-play"></i> Скачать для Android
-                    </a>
-                </div>
-                <p class="small-note">* Приложение находится в разработке, скоро в магазинах</p>
-            </div>
+<header class="header">
+  <div class="container">
+    <a href="/" class="logo">
+      <img src="images/app-icon.png" alt="Кью лого">
+      <span>Кью</span>
+    </a>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#features">Возможности</a></li>
+        <li><a href="#screenshots">Скриншоты</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="#" class="btn btn-ios"><i class="fab fa-apple"></i> iOS</a>
+        <a href="#" class="btn btn-android"><i class="fab fa-google-play"></i> Android</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Обменивайся файлами с однокурсниками легко и быстро</h1>
+      <p>Загружай лекции, книги, фотографии и делись с друзьями в удобном приложении.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-ios"><i class="fab fa-apple"></i> Скачать для iOS</a>
+        <a href="#" class="btn btn-android"><i class="fab fa-google-play"></i> Скачать для Android</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.9rem;">* Приложение в разработке, скоро в магазинах</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/screen1.png" alt="Приложение Кью" onerror="this.src='https://via.placeholder.com/300x600/4f46e5/ffffff?text=Скриншот'">
+    </div>
+  </div>
+</section>
+<section class="features" id="features">
+  <div class="container">
+    <h2>Возможности приложения</h2>
+    <div class="feature-grid">
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <h3>Загрузка файлов</h3>
+        <p>Поддерживаются любые форматы: от фото до курсовых работ.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon"><i class="fas fa-search"></i></div>
+        <h3>Умный поиск</h3>
+        <p>Мгновенный поиск по названию, предмету или ключевым словам.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon"><i class="fas fa-lock"></i></div>
+        <h3>Приватность</h3>
+        <p>Только вы решаете, кто видит ваши файлы.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon"><i class="fas fa-users"></i></div>
+        <h3>Группы по курсам</h3>
+        <p>Создавайте группы для своего университета или предмета.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon"><i class="fas fa-history"></i></div>
+        <h3>История действий</h3>
+        <p>Все загрузки и просмотры сохраняются.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon"><i class="fas fa-bell"></i></div>
+        <h3>Уведомления</h3>
+        <p>Мгновенно узнавайте о новых файлах в общих папках.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="screenshots" id="screenshots">
+  <div class="container">
+    <h2>Как это выглядит</h2>
+    <div class="screenshot-gallery">
+      <div class="screenshot animate-on-scroll">
+        <img src="images/screen1.png" alt="Экран файлов" onerror="this.src='https://via.placeholder.com/250x500/4f46e5/ffffff?text=Скриншот+1'">
+      </div>
+      <div class="screenshot animate-on-scroll">
+        <img src="images/screen2.png" alt="Экран поиска" onerror="this.src='https://via.placeholder.com/250x500/764ba2/ffffff?text=Скриншот+2'">
+      </div>
+      <div class="screenshot animate-on-scroll">
+        <img src="images/screen3.png" alt="Экран профиля" onerror="this.src='https://via.placeholder.com/250x500/10b981/ffffff?text=Скриншот+3'">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+    <h2>О нас</h2>
+    <div class="about-content">
+      <p><strong>Кью</strong> — это мобильное приложение, созданное студентами для студентов. Мы хотим сделать обмен учебными материалами простым, быстрым и безопасным.</p>
+      <p>Наша миссия — помочь студентам делиться знаниями, курсовыми работами, лекциями и другими полезными материалами, экономя время и силы. Вместо того чтобы искать файлы в мессенджерах, вы можете загрузить их в Кью и сразу предоставить доступ однокурсникам.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <div class="stat-number">0+</div>
+        <div class="stat-label">студентов</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">0+</div>
+        <div class="stat-label">университетов</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">0+</div>
+        <div class="stat-label">файлов</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials">
+  <div class="container">
+    <h2>Что будут говорить студенты</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-text">«Кью спас меня перед сессией! Все лекции в одном месте, удобно делиться с группой.»</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">А</div>
+          <div class="author-info">
+            <h4>Анна, МГУ</h4>
+            <p>2 курс</p>
+          </div>
         </div>
-    </header>
-    <section class="features">
-        <div class="container">
-            <h2>Возможности приложения</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                    </div>
-                    <h3>Загрузка файлов</h3>
-                    <p>Загружай лекции, книги, фотографии с телефона или компьютера. Поддерживаются любые форматы.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Умный поиск</h3>
-                    <p>Мгновенно находи нужные материалы по названию, предмету или ключевым словам.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <h3>Приватность</h3>
-                    <p>Только ты решаешь, кому открыть доступ к файлам. Можно делиться с группой или отдельными людьми.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Группы по курсам</h3>
-                    <p>Создавай группы для своего университета, курса или предмета и обменивайся материалами внутри них.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-history"></i>
-                    </div>
-                    <h3>История действий</h3>
-                    <p>Все загрузки и просмотры сохраняются — ты всегда знаешь, кто и когда скачал твой файл.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-bell"></i>
-                    </div>
-                    <h3>Уведомления</h3>
-                    <p>Мгновенно узнавай о новых загрузках в общих папках и комментариях к твоим файлам.</p>
-                </div>
-            </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-text">«Отличное приложение для обмена курсовыми и лабораторными. Всё быстро и понятно.»</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">Д</div>
+          <div class="author-info">
+            <h4>Дмитрий, Бауманка</h4>
+            <p>3 курс</p>
+          </div>
         </div>
-    </section>
-    <section class="screenshots">
-        <div class="container">
-            <h2>Как это выглядит</h2>
-            <div class="screenshot-gallery">
-                <div class="screenshot">
-                    <img src="images/screen1.png" alt="Экран файлов">
-                </div>
-                <div class="screenshot">
-                    <img src="images/screen2.png" alt="Экран поиска">
-                </div>
-                <div class="screenshot">
-                    <img src="images/screen3.png" alt="Экран профиля">
-                </div>
-            </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-text">«Наконец-то не нужно искать файлы в куче чатов. Кью — must-have для каждого студента!»</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">Е</div>
+          <div class="author-info">
+            <h4>Елена, СПбГУ</h4>
+            <p>1 курс</p>
+          </div>
         </div>
-    </section>
-    <section class="download">
-        <div class="container">
-            <h2>Присоединяйся к сообществу студентов</h2>
-            <p>Тысячи студентов уже обмениваются файлами. Стань частью удобного и безопасного обмена знаниями!</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-ios"><i class="fab fa-apple"></i> iOS</a>
-                <a href="#" class="btn btn-android"><i class="fab fa-google-play"></i> Android</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/app-icon.png" alt="Кью" class="footer-icon">
-                    <span>Кью</span>
-                </div>
-                <div class="footer-links">
-                    <a href="#">О нас</a>
-                    <a href="#">Контакты</a>
-                    <a href="#">Политика конфиденциальности</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
-                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Кью. Все права защищены. Сайт создан для демонстрации приложения.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq" id="faq">
+  <div class="container">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Как загрузить файл?</summary>
+        <div class="faq-answer">В приложении нажмите на кнопку «+» и выберите файл с устройства. Можно загружать несколько файлов одновременно.</div>
+      </details>
+      <details>
+        <summary>Кто может видеть мои файлы?</summary>
+        <div class="faq-answer">Только вы и те, кому вы открыли доступ. Вы можете создавать закрытые группы или делиться ссылкой с конкретными людьми.</div>
+      </details>
+      <details>
+        <summary>Приложение бесплатное?</summary>
+        <div class="faq-answer">Да, базовый функционал полностью бесплатен. В будущем появятся дополнительные возможности по подписке.</div>
+      </details>
+      <details>
+        <summary>Как удалить файл или аккаунт?</summary>
+        <div class="faq-answer">В настройках профиля есть пункты «Удалить файл» и «Удалить аккаунт». Все данные будут безвозвратно стёрты.</div>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Свяжитесь с нами</h2>
+    <p>Если у вас есть вопросы, предложения или вы хотите сообщить о проблеме, напишите нам.</p>
+    <div class="contact-links">
+      <a href="mailto:support@kew.su" class="contact-link"><i class="fas fa-envelope"></i> support@kew.su</a>
+      <a href="#" class="contact-link"><i class="fab fa-telegram-plane"></i> @kew_support</a>
+      <a href="#" class="contact-link"><i class="fab fa-vk"></i> vk.com/kew_app</a>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="#" class="btn btn-ios"><i class="fab fa-apple"></i> iOS</a>
+      <a href="#" class="btn btn-android"><i class="fab fa-google-play"></i> Android</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/app-icon.png" alt="Кью">
+        <span>Кью</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">О нас</a>
+        <a href="#features">Возможности</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+        <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Кью. Все права защищены. Сайт создан для демонстрации приложения.</p>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
