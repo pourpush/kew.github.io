@@ -1,4 +1,3 @@
-// Плавный скролл для якорных ссылок (если добавятся в будущем)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -9,5 +8,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Простое приветствие в консоли (для разработчиков)
-console.log('StudentShare Landing Page v1.0. Сайт работает!');
+console.log('Кью загрузка страницы v1.0. Сайт работает!');
+const yearElement = document.getElementById('current-year');
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
